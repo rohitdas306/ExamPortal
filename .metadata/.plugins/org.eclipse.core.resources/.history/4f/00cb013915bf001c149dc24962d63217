@@ -1,0 +1,6 @@
+server.port=8899
+eureka.instance.hostname=localhost
+spring.application.name=api-gateway
+spring.cloud.gateway.discovery.locator.route-id-prefix=user-service
+spring.cloud.gateway.discovery.locator.url-expression=lb://user-service
+spring.cloud.gateway.discovery.locator.predicates=-path=/user/**
